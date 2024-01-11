@@ -6,15 +6,16 @@ int main()
 	int iterationNum = 50;
 	
 	// Lazy Caterer
-	printf("Lazy Caterer\n");
+	printf("Lazy Caterer's Sequence:\n");
 	for(int i = 0; i < iterationNum; i++) {
 		int result = ((i*i) + i + 2)/2;
 		printf("%d ", result);
 	}
 	
+	printf("\n\n");
 	
 	// Print the prime numbers
-	printf("\n\nPrime Numbers:\n");
+	printf("Prime Numbers:\n");
 	int count = 0;
 	int currentNum = 2;
 	while(count < iterationNum) {
@@ -33,9 +34,10 @@ int main()
 	
 	}
 
+	printf("\n\n");
 
 	// Fib Sequence
-	printf("\n\nFibonacci Sequence:\n");
+	printf("Fibonacci Sequence:\n");
 	count = 1;
 	unsigned long first = 0;
 	unsigned long second = 1;
@@ -51,10 +53,10 @@ int main()
 		count++;
 	}
 	
-	
+	printf("\n\n");
 	
 	// Collatz Stopping Times
-	printf("\n\nCollatz Stopping Times:\n");
+	printf("Collatz Stopping Times:\n");
 	count = 1;
 	while (count <= iterationNum) {
 		int currentNum = count;
@@ -71,9 +73,10 @@ int main()
 		printf("%d ", totalOp);
 	}
 	
+	printf("\n\n");
 	
 	// Happy Numbers
-	printf("\n\nHappy Numbers:\n");
+	printf("Happy Numbers:\n");
 	count = 0;
 	currentNum = 1;
 	while (count < iterationNum) {
@@ -94,8 +97,9 @@ int main()
 		currentNum++;
 	}
 	
+	printf("\n\n");
+	
 	
 	return 0;
 	
 }
-
