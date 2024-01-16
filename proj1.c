@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <math.h>
+#define ITERATIONS 50
 
 int main()
 {
-	int iterationNum = 50;
-	
 	// Lazy Caterer
 	printf("Lazy Caterer's Sequence:\n");
-	for(int i = 0; i < iterationNum; i++) {
+	for(int i = 0; i < ITERATIONS; i++) {
 		int result = ((i*i) + i + 2)/2;
 		printf("%d ", result);
 	}
@@ -18,7 +17,7 @@ int main()
 	printf("Prime Numbers:\n");
 	int count = 0;
 	int currentNum = 2;
-	while(count < iterationNum) {
+	while(count < ITERATIONS) {
 		int success = 1;
 		for(int i = 2; i < currentNum; i++) {
 			if(currentNum % i == 0) {
@@ -44,7 +43,7 @@ int main()
 	
 	// Display the first number, then enter the loop
 	printf("1 ");
-	while (count < iterationNum)
+	while (count < ITERATIONS)
 	{
 		unsigned long sum = first + second;
 		printf("%lu ", sum);
@@ -58,7 +57,7 @@ int main()
 	// Collatz Stopping Times
 	printf("Collatz Stopping Times:\n");
 	count = 1;
-	while (count <= iterationNum) {
+	while (count <= ITERATIONS) {
 		int currentNum = count;
 		int totalOp = 0;
 		while (currentNum != 1) {
@@ -79,7 +78,7 @@ int main()
 	printf("Happy Numbers:\n");
 	count = 0;
 	currentNum = 1;
-	while (count < iterationNum) {
+	while (count < ITERATIONS) {
 		int num = currentNum;
 		while(num != 1 && num != 4) {
 			int sum = 0;
